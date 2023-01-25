@@ -1,0 +1,51 @@
+ h1 {
+    text-align: center;
+    font-size: 24px;
+}
+p {
+    font-size: 120%;
+}
+a {
+    display: block;
+}
+a:nth-child(1):link {
+    color: rgb(250, 253, 215);
+}
+a:nth-child(2):link {
+    color: rgb(204, 231, 108);
+}
+a:nth-child(3):link {
+    color: rgb(110, 15, 218);
+}
+a:nth-child(4):link {
+    color: rgb(40, 128, 128);
+}
+a:nth-child(1):visited {
+    color: rgb(252, 57, 154);
+}
+a:nth-child(2):visited {
+    color: rgb(146, 3, 3);
+}
+a:nth-child(3):visited {
+    color: rgb(41, 196, 21);
+}
+a:nth-child(4):visited {
+    color: rgb(97, 200, 204);
+}
+
+@media (min-width: 993px) {
+    div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    a {
+        flex: 1 50%;
+    }
+}
